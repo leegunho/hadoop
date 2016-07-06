@@ -83,6 +83,7 @@ public class TopN {
 
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
+    	//  설정한 N 의 갯수를 가져온다.
       topN = context.getConfiguration().getInt("topN", 10);
     }
 
